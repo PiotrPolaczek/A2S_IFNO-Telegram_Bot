@@ -1,7 +1,7 @@
 import a2s
 import requests
 
-address = ("90.38.201.141", 27015)
+address = ("SERVERIP", PORT)
 
 try:
     response = a2s.info(address)
@@ -9,10 +9,10 @@ try:
     if response:
         print("sukces")
 except TimeoutError:
-    TOKEN = "6238535182:AAEUuEZMN-bDf7IKWA2TFG0-G0nzvnNVXQA"
-    chat_id = "5861503249"
+    TOKEN = "TOKEN"
+    chat_id = "CHAT_ID"
     message = "hello from your telegram bot"
-    url = f"https://api.telegram.org/bot{'6238535182:AAEUuEZMN-bDf7IKWA2TFG0-G0nzvnNVXQA'}/sendMessage?chat_id={'5861503249'}&text={'kupa'}"
+    url = f"https://api.telegram.org/bot{'TOKEN'}/sendMessage?chat_id={'CHATID'}&text={'MESSENGER'}"
     print(requests.get(url).json())  # this sends the message
 
 
