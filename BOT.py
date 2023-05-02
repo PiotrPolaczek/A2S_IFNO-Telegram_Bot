@@ -2,7 +2,7 @@ import time
 import requests
 import a2s
 
-address = ("90.38.201.141", 27015)
+address = ("IP", PORT)
 
 while True:
     try:
